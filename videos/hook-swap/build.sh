@@ -34,13 +34,12 @@ build() {
 }
 
 # A - Mattress receipt: original symptom + "pas de ton matelas" lines (2.03-7.53s), receipt + INUTILE stamp.
-IN_A=(-loop 1 -t 8 -i "$OV/A_head.png" -loop 1 -t 8 -i "$OV/A_receipt.png" -loop 1 -t 8 -i "$OV/A_stamp.png" -loop 1 -t 8 -i "$OV/A_banner.png")
+IN_A=(-loop 1 -t 8 -i "$OV/A_head.png" -loop 1 -t 8 -i "$OV/A_receipt.png" -loop 1 -t 8 -i "$OV/A_stamp.png")
 build A-MATTRESS-RECEIPT IN_A "
   [0:v]trim=2.0333:7.5333,setpts=PTS-STARTPTS,$V_NORM[s];
   [s][1:v]overlay=shortest=1[o1];
   [o1][2:v]overlay=shortest=1:enable='lt(t,3.4)'[o2];
-  [o2][3:v]overlay=shortest=1:enable='between(t,0.9,3.4)'[o3];
-  [o3][4:v]overlay=shortest=1[hv];
+  [o2][3:v]overlay=shortest=1:enable='between(t,0.9,3.4)'[hv];
   [0:a]atrim=2.0333:7.5333,asetpts=PTS-STARTPTS,$A_NORM,afade=t=out:st=5.49:d=0.01[ha]"
 
 # B - Pillow fight: existing "oreiller mal adapté" wrestle shot (35.63-38.00s) as the pattern interrupt.
@@ -55,7 +54,7 @@ build B-PILLOW-FIGHT IN_B "
 #     et ta colonne perd son alignement naturel") with its own audio, as a flash-forward before 7.53s.
 IN_C=(-loop 1 -t 8 -i "$OV/C_marker.png" -loop 1 -t 8 -i "$OV/C_head.png")
 build C-FINGER-LEG IN_C "
-  [0:v]trim=11.7333:14.7,setpts=PTS-STARTPTS,crop=480:853:120:150,$V_NORM,unsharp=5:5:0.6[s];
+  [0:v]trim=11.7333:14.7,setpts=PTS-STARTPTS,crop=480:853:120:50,$V_NORM,unsharp=5:5:0.6[s];
   [s][1:v]overlay=shortest=1:enable='gte(t,0.3)'[o1];
   [o1][2:v]overlay=shortest=1[hv];
   [0:a]atrim=11.7333:14.7,asetpts=PTS-STARTPTS,$A_NORM,afade=t=out:st=2.95:d=0.015[ha]"
@@ -67,7 +66,7 @@ ffmpeg -v error -y -ss 53.0 -i "$SRC" -frames:v 1 build/D_still.png
 IN_D=(-loop 1 -t $D_LEN -framerate 30 -i build/D_still.png -loop 1 -t 8 -i "$OV/D_badge.png" -loop 1 -t 8 -i "$OV/D_top1.png" -loop 1 -t 8 -i "$OV/D_top2.png" -loop 1 -t 8 -i "$OV/D_top3.png"
       -f lavfi -t $D_LEN -i "anoisesrc=color=pink:amplitude=0.5:r=44100")
 build D-SENIOR-VOUS IN_D "
-  [1:v]scale=1440:2560,zoompan=z='1+0.07*on/($D_LEN*30)':x='iw/2-(iw/zoom/2)':y='ih*0.42-(ih/zoom*0.42)':d=1:s=720x1280:fps=30,$V_NORM[s];
+  [1:v]scale=1440:2560,zoompan=z='1+0.03*on/($D_LEN*30)':x='iw/2-(iw/zoom/2)':y='ih*0.42-(ih/zoom*0.42)':d=1:s=720x1280:fps=30,$V_NORM[s];
   [s][2:v]overlay=shortest=1[o1];
   [o1][3:v]overlay=shortest=1:enable='lt(t,1.3)'[o2];
   [o2][4:v]overlay=shortest=1:enable='between(t,1.3,2.8)'[o3];
