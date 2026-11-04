@@ -16,7 +16,7 @@ GREY = (170, 178, 200)
 
 ANTON = os.path.join(BASE, "fonts", "Anton.ttf")
 INTER = "/usr/share/fonts/opentype/inter/Inter-{}.otf"
-RISK = "Trading involves risk. Only trade with money you can afford to lose."
+RISK = "Educational content, not financial advice. Trading involves risk of loss."
 
 
 def f_anton(sz): return ImageFont.truetype(ANTON, sz)
@@ -146,17 +146,17 @@ def ad1():
     d = ImageDraw.Draw(c)
     x = 520
     maxw = S - x - 44
-    shadow_text(c, (x, 52), "COPY MY", fit(d, "COPY MY", f_anton, 150, maxw))
-    shadow_text(c, (x, 210), "TRADES", fit(d, "TRADES", f_anton, 150, maxw))
+    shadow_text(c, (x, 52), "LEARN THE", fit(d, "LEARN THE", f_anton, 150, maxw))
+    shadow_text(c, (x, 210), "MARKETS", fit(d, "MARKETS", f_anton, 150, maxw))
     # teal pill
     pf = f_anton(64)
     pw = text_w(d, "FREE TO JOIN", pf)
     d.rounded_rectangle([x, 395, x + pw + 56, 485], radius=45, fill=TEAL)
     d.text((x + 28 + pw // 2, 440), "FREE TO JOIN", font=pf, fill=WHITE, anchor="mm")
     sub = f_inter("SemiBold", 30)
-    d.text((x, 520), "Daily trade ideas for", font=sub, fill=WHITE)
+    d.text((x, 520), "Daily market insights on", font=sub, fill=WHITE)
     d.text((x, 558), "Forex • Commodities • Indices", font=sub, fill=BLUE)
-    items = ["Entry, stop-loss & target", "Copy trades in one tap", "No experience needed"]
+    items = ["Every setup explained", "Learn at your own pace", "Beginner-friendly lessons"]
     ifont = f_inter("SemiBold", 30)
     y = 630
     for it in items:
@@ -165,9 +165,9 @@ def ad1():
         d.text((x + 62, y + 22), it, font=ifont, fill=WHITE, anchor="lm")
         y += 66
     pill(c, x + 170, 852, "★ 4.9 on Trustpilot", f_inter("SemiBold", 26))
-    footer(c, "JOIN NOW → ACCESS THE COMMUNITY", cta_fill=TEAL, top=910)
+    footer(c, "JOIN THE FREE COMMUNITY →", cta_fill=TEAL, top=910)
     # CTA text white on teal
-    save(c, "ad1_copy-my-trades_1080.jpg")
+    save(c, "ad1_learn-the-markets_1080.jpg")
 
 
 # ---------- Ad 2: Trade like Mike ----------
@@ -175,11 +175,11 @@ def ad2():
     c = new()
     place_photo(c, os.path.join(IMG, "2.jpg"), (0, 440, 1408, 0), 190, 710, fade=110)
     d = ImageDraw.Draw(c)
-    shadow_text(c, (S // 2, 30), "TRADE LIKE MIKE", fit(d, "TRADE LIKE MIKE", f_anton, 150, S - 90), anchor="ma")
-    shadow_text(c, (S // 2, 212), "Copy professional trades in 20 minutes a day", fit(d, "Copy professional trades in 20 minutes a day", lambda s: f_inter("SemiBold", s), 40, S - 120), anchor="ma")
+    shadow_text(c, (S // 2, 30), "LEARN FROM MIKE", fit(d, "LEARN FROM MIKE", f_anton, 150, S - 90), anchor="ma")
+    shadow_text(c, (S // 2, 212), "Daily market analysis, explained step by step", fit(d, "Daily market analysis, explained step by step", lambda s: f_inter("SemiBold", s), 40, S - 120), anchor="ma")
     pill(c, S // 2, 840, "Free to join  •  ★ 4.9 on Trustpilot", f_inter("SemiBold", 28), fill=(14, 20, 44, 170))
     footer(c, "JOIN FX TRADING VISION →")
-    save(c, "ad2_trade-like-mike_1080.jpg")
+    save(c, "ad2_learn-from-mike_1080.jpg")
 
 
 # ---------- Ad 3: Your phone ----------
@@ -195,10 +195,10 @@ def ad3():
     place_photo(c, src, (0, 395, 1408, 0), 205, 695, fade=110)
     d = ImageDraw.Draw(c)
     shadow_text(c, (S // 2, 28), "YOUR PHONE.", fit(d, "YOUR PHONE.", f_anton, 112, S - 90), anchor="ma")
-    shadow_text(c, (S // 2, 150), "YOUR TRADING COMMUNITY.", fit(d, "YOUR TRADING COMMUNITY.", f_anton, 112, S - 90), fill=(64, 190, 245), anchor="ma")
+    shadow_text(c, (S // 2, 150), "YOUR TRADING CLASSROOM.", fit(d, "YOUR TRADING CLASSROOM.", f_anton, 112, S - 90), fill=(64, 190, 245), anchor="ma")
     pill(c, 700, 846, "Free to join  •  ★ 4.9 Trustpilot", f_inter("SemiBold", 26), fill=(14, 20, 44, 170))
-    footer(c, "JOIN FREE • START COPYING TRADES")
-    save(c, "ad3_your-phone_1080.jpg")
+    footer(c, "JOIN FREE • START LEARNING")
+    save(c, "ad3_your-classroom_1080.jpg")
 
 
 # ---------- Ad 4: Beach interview (head & shoulders crop) ----------
@@ -207,12 +207,12 @@ def ad4():
     src = os.path.join(IMG, "4.jpg")
     place_photo(c, src, (40, 395, 1368, 0), 300, 375, fade=60)
     d = ImageDraw.Draw(c)
-    shadow_text(c, (S // 2, 50), "COPY THE SAME TRADES", fit(d, "COPY THE SAME TRADES", f_anton, 130, S - 90), anchor="ma")
-    shadow_text(c, (S // 2, 210), "Free to join  •  20 minutes a day", f_inter("SemiBold", 40), anchor="ma")
-    pill(c, S // 2, 740, "★ 4.9 on Trustpilot  •  No experience needed", f_inter("SemiBold", 28), fill=(255, 255, 255, 28))
-    d.text((S // 2, 828), "Daily trade ideas for Forex • Commodities • Indices", font=f_inter("SemiBold", 30), fill=BLUE, anchor="mm")
+    shadow_text(c, (S // 2, 50), "LEARN TOGETHER", fit(d, "LEARN TOGETHER", f_anton, 130, S - 90), anchor="ma")
+    shadow_text(c, (S // 2, 210), "Free to join  •  Beginner-friendly", f_inter("SemiBold", 40), anchor="ma")
+    pill(c, S // 2, 740, "★ 4.9 on Trustpilot  •  200,000+ members", f_inter("SemiBold", 28), fill=(255, 255, 255, 28))
+    d.text((S // 2, 828), "Daily market insights: Forex • Commodities • Indices", font=f_inter("SemiBold", 30), fill=BLUE, anchor="mm")
     footer(c, "JOIN THE COMMUNITY →")
-    save(c, "ad4_copy-the-same-trades_1080.jpg")
+    save(c, "ad4_learn-together_1080.jpg")
 
 
 # ---------- Ad 5: Free FX trades (screenshot removed) ----------
@@ -221,11 +221,11 @@ def ad5():
     src = os.path.join(IMG, "5.jpg")
     place_photo(c, src, (556, 520, 1408, 0), 230, 670, fade=100)
     d = ImageDraw.Draw(c)
-    shadow_text(c, (S // 2, 26), "FREE FX TRADES", fit(d, "FREE FX TRADES", f_anton, 140, S - 90), anchor="ma")
-    shadow_text(c, (S // 2, 190), "Copy them in one tap. No experience needed.", fit(d, "Copy them in one tap. No experience needed.", lambda s: f_inter("SemiBold", s), 38, S - 120), anchor="ma")
-    pill(c, S // 2, 846, "20 minutes a day  •  ★ 4.9 on Trustpilot", f_inter("SemiBold", 28), fill=(14, 20, 44, 170))
-    footer(c, "JOIN FREE • LINK BELOW")
-    save(c, "ad5_free-fx-trades_1080.jpg")
+    shadow_text(c, (S // 2, 26), "FREE MARKET INSIGHTS", fit(d, "FREE MARKET INSIGHTS", f_anton, 140, S - 90), anchor="ma")
+    shadow_text(c, (S // 2, 190), "See how Mike plans every trade idea.", fit(d, "See how Mike plans every trade idea.", lambda s: f_inter("SemiBold", s), 38, S - 120), anchor="ma")
+    pill(c, S // 2, 846, "Learn in 20 minutes a day  •  ★ 4.9 Trustpilot", f_inter("SemiBold", 28), fill=(14, 20, 44, 170))
+    footer(c, "JOIN FREE • START LEARNING")
+    save(c, "ad5_free-market-insights_1080.jpg")
 
 
 for fn in sys.argv[1:] or ["ad1", "ad2", "ad3", "ad4", "ad5"]:
