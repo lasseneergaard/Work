@@ -12,8 +12,9 @@ Every line here is backed by the partner page, the FAQ or the internal docs. Lin
 | Pain it answers | Phrasings |
 |---|---|
 | Clients drift / don't return | "Every visit earns her cashback at your place." · "Her next visit already has a reason waiting." · "You give her something to come back for, without giving anything away at the till." |
-| Loyal to a stylist, not the salon | "Tied to your salon, not one stylist." · "If a stylist leaves, the reason to come back stays with you." |
-| Discounts cheapen the brand | "Your prices stay full." · "No price cuts on the menu. The thank-you comes after." · "Discounts shout 'cheap'. Cashback says 'thanks for coming back'." |
+| Loyal to a stylist, not the salon | "Tied to your salon, not one stylist." · "If a stylist leaves, the reason to come back stays with you." · "Make the loyalty belong to the salon." · "Whoever does her hair." |
+| Discounts cheapen the brand | "Your prices stay full." · "No price cuts on the menu. The thank-you comes after." · "Discounts shout 'cheap'. Cashback says 'thanks for coming back'." · "Kill the Wednesday discount. It trains clients to wait for a sale." |
+| Always chasing new clients | "Stop chasing strangers." · "Work the clients you already won." |
 | Merchant-set rate | "You choose how much cashback you give." · "You set the %, so the numbers work for you." |
 | Restaurants: nearby places feel interchangeable | "When two places look the same, she picks the one that pays her back." · "Next time they're hungry, they've got a reason to pick you." |
 
@@ -39,7 +40,7 @@ Every line here is backed by the partner page, the FAQ or the internal docs. Lin
 
 | Pain it answers | Phrasings |
 |---|---|
-| Paying for clicks / impressions | "Sales-based. No fixed monthly fee." · "You're not paying to be seen. It's based on sales." |
+| Paying for clicks / impressions | "Sales-based. No fixed monthly fee." · "You're not paying to be seen. It's based on sales." · "Stop paying for clicks you can't follow." · "My Instagram ads never showed me this." |
 | Fear of big upfront cost | "One start fee of 4.500 kr. After that, it's based on sales." (⚠️ add the 12-month minimum if CMV wants it shown) |
 
 ## 5. Ease & support
