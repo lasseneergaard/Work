@@ -45,7 +45,12 @@ Meta allows "information about financial education" and "educational advertiseme
 - Copy must sell **learning**: lessons, analysis, community, explanations.
 - The **landing page must be educational too**. It must not open a broker account, connect a copy-trading tool or show "start copying" as the first step. If the funnel does that, the campaign is on Route B, whatever the ad says.
 
-**Route B: financial service (copy trading, signals, broker sign-up, account management)**
+**Hard limits from Meta's live Financial Services policy (read 7 Nov 2026, last changed 30 Oct 2026):**
+- Ads **can't promote CFD trading** (listed with binary options, ICOs, penny auctions under "Deceptive and Misleading Financial Instruments"). No exception is listed. Most retail forex and gold trading through brokers is CFD trading, so a funnel that ends in CFD broker sign-ups (affiliate/IB) can't be advertised however the ad is worded.
+- **US audiences:** no ads for investment products or opportunities, even as education, unless the advertiser is a verified accredited brokerage or licensed adviser, and no investment ads that push direct messaging (Telegram, WhatsApp, Messenger). Exclude the US by default.
+- Exemption: ads that "only mention a financial service or product without the ability to obtain or connect with that product/service".
+
+**Route B: financial service (copy trading, signals, broker sign-up, account management)** — only viable for non-CFD products, outside the US, with verification where required.
 - "Investment products and opportunities" need **advertiser verification** for audiences in: **Australia, Hong Kong, India, Ireland, Israel, Spain, Taiwan, Thailand, United Kingdom, United States**. Some countries require a licence (e.g. AFSL in Australia, FCA authorisation in the UK). Without it, ads to those countries get rejected.
 - **US audience or US-based advertiser:** the **Financial Products and Services special ad category** is mandatory (since 21 Jan 2025). Not choosing it is a rejection reason. It also restricts targeting by age, gender, ZIP code and detailed targeting.
 - Route B copy can mention copying or signals, but all of sections 3 to 6 still apply.
