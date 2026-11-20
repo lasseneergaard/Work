@@ -124,6 +124,10 @@ Words to use with care (fine in context, risky when stacked with results): `copy
 
 When delivering ads, include a short compliance note listing what was checked and any open assumptions (e.g. "4.9★ assumed current", "landing page assumed educational").
 
+**Brands are separate clients — never mix them:** Mike = FX Trading Vision (FXTV, 342,000+ open community). Nate = FX Culture Trading (realnate.com; member count unconfirmed — leave it out). Separate end cards, folders, copy and reports.
+
+**Re-edit technique when re-recording is impossible:** keep only clean presenter-to-camera shots, remove all original audio, blur/darken the old caption band, burn new compliant captions, append the brand end card (`scratchpad/tools/reedit.py`). Never keep shots of phones, P&L, calculators or people "earning", even blurred.
+
 **User preference:** for every video or creative, always deliver **at least 2 different primary-text options** to test (different angles, not rewordings), each run through this checklist.
 
 ## 8. Creative tooling in this repo
