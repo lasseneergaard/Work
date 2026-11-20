@@ -124,6 +124,8 @@ Words to use with care (fine in context, risky when stacked with results): `copy
 
 When delivering ads, include a short compliance note listing what was checked and any open assumptions (e.g. "4.9★ assumed current", "landing page assumed educational").
 
+**User preference:** for every video or creative, always deliver **at least 2 different primary-text options** to test (different angles, not rewordings), each run through this checklist.
+
 ## 8. Creative tooling in this repo
 
 `ads/tools/build_square_ads.py` renders the 1080×1080 statics. The copy lives in each `adN()` function and `RISK`. Run every copy change through section 7 before re-rendering.
