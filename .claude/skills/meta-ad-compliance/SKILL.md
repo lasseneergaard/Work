@@ -11,7 +11,7 @@ description: Compliance rules for writing and reviewing Meta (Facebook/Instagram
   - [About verification requirements for financial services advertisers](https://www.facebook.com/business/help/719892839342050)
   - [About ads for financial products and services](https://www.facebook.com/business/help/567423788405762)
   - [Ad review feedback definitions](https://developers.facebook.com/docs/marketing-api/adgroup/feedback)
-- **Not yet read in full:** Meta's Advertising Standards at `transparency.meta.com`. This cloud environment's network blocks that host. Everything else below is established Meta ad-review practice for this vertical, not a quote. When the host is allowed, re-read the Financial and Insurance Products, Unacceptable Business Practices, Personal Attributes and Circumventing Systems policies and update this file.
+- **Read directly on 7 Nov 2026:** Meta's Advertising Standards at `transparency.meta.com` (Financial Services, Prohibited Commercial Practices, Spam, Privacy Violations and Personal Attributes, plus the overview). Section 2's hard limits quote the Financial Services policy. The rest of this file is established ad-review practice for this vertical.
 - Policies change. If an ad is rejected for a reason this file doesn't predict, add the reason and the fix to section 9.
 
 ## 1. The core rule: Meta reviews meaning, not keywords
@@ -57,6 +57,11 @@ Meta allows "information about financial education" and "educational advertiseme
 
 When unsure which route applies, ask the user what the landing page does after the click.
 
+**FX Trading Vision facts (confirmed by the user, Nov 2026):**
+- The open Telegram community has **over 342,000 members** ("over 340,000" is safe to use).
+- That open channel is titled "Forex & Crypto Signals", posts trade calls and member P&L screenshots, and pins VIP "results" with an "UNLOCK VIP" button. FXTV does **not** post charts or analysis. So any ad linking to it is **Route B, CFD signals**, and fails checks 1 and 9 below whatever the copy says. Never write copy claiming analysis, lessons or charts unless the user confirms they now exist in the linked channel.
+- The core business framing is "copy my trades, no time, same results". That framing is never compliant on Meta; don't try to soften it into ad copy.
+
 ## 3. Banned claim types, with equivalents that are equally banned
 
 | Banned claim type | Examples (all equally banned) |
@@ -68,7 +73,7 @@ When unsure which route applies, ask the user what the landing page does after t
 | **Get rich quick or life change** | "quit your job", "financial freedom in 30 days", "become a millionaire", "change your life overnight" |
 | **Implied results** | "copy the same trades" next to results, "trades that actually work", "proven to make money", "verified profits" (unless audited by a named third party) |
 | **Urgency or scarcity hype** | "last chance", "only 10 spots", "before it's too late", "secret strategy banks don't want you to know" |
-| **Personal attributes (Meta policy)** | "Are you broke?", "Tired of being poor?", "You're losing money", "Still stuck in your 9-5?" — never say or imply what the viewer's finances or situation are |
+| **Personal attributes (Meta policy)** | "Are you broke?", "Tired of being poor?", "You're losing money", "Still stuck in your 9-5?", "You think it's a scam" — never say or imply what the viewer's finances, situation **or beliefs** are. Say it in the third person ("Most people think…") or about Mike ("When I started, I…") |
 | **Aggressive or violent framing** | "weapon", "the wolf of…", "kill the market", "destroy your job" |
 | **Fake or unverifiable social proof** | invented member counts, "5-star reviews" counts, ratings that aren't the current live score |
 
