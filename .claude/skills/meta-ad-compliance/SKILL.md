@@ -126,7 +126,7 @@ When delivering ads, include a short compliance note listing what was checked an
 
 **Brands are separate clients — never mix them:** Mike = FX Trading Vision (FXTV, 342,000+ open community). Nate = FX Culture Trading (realnate.com; member count unconfirmed — leave it out). Separate end cards, folders, copy and reports.
 
-**Re-edit technique when re-recording is impossible:** keep only clean presenter-to-camera shots, remove all original audio, blur/darken the old caption band, burn new compliant captions, append the brand end card (`scratchpad/tools/reedit.py`). Never keep shots of phones, P&L, calculators or people "earning", even blurred.
+**Re-edit technique when re-recording is impossible:** videos must stay native, so they blend in with normal Instagram content. Keep the presenter's **original audio and original small burned-in captions**, cut down to only the compliant spoken phrases (cut at audio dips, with a short fade at each join), and append the brand end card (`scratchpad/native/build.sh`). **Never** make silent videos, and never burn new big captions; the user has rejected both as "not native". If too little compliant speech is left, ask for a short voice memo from the presenter instead. Never keep shots of phones, P&L, calculators or people "earning", even blurred. Luxury settings (private jets, supercars) or women used as props can't be fixed by editing.
 
 **User preference:** for every video or creative, always deliver **at least 2 different primary-text options** to test (different angles, not rewordings), each run through this checklist.
 
